@@ -11,3 +11,11 @@ app:
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
+article:
+    path:    /article
+    defaults: { _controller: AppBundle:Article:article }
+
+comment:
+    path:    /article
+    defaults: { _controller: AppBundle:Comment:post}
+
